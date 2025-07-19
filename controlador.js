@@ -49,7 +49,7 @@ app.run(function ($rootScope, $location, $http) {
 
     $rootScope.abrirWhatsapp = function(telefone){
         telefone = telefone.split('-').join('');
-        let link = `https://wa.me/5511${telefone}`;
+        let link = `https://wa.me/55${telefone}`;
         window.open(link, '_blank');
     };
 
