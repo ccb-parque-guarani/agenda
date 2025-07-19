@@ -15,7 +15,7 @@ app.run(function ($rootScope, $location, $http) {
     (function getDados() {
         $rootScope.carregando = true;
         // $http.get("https://felipe-lopes-1.github.io/agenda-ccb-pq-guarani/dados.json").then(function (response) {
-        $http.get("https://opensheet.elk.sh/1yKFVfnEdAkHfj_7-WvfJ9xotRlle6dlyjCIctrwggHE/1").then(function (response) {
+        $http.get("https://opensheet.elk.sh/1sMBzkl3nmXrCkkuTRhCFLX8Kwl4vJc52K31d9E8ZsqM/1").then(function (response) {
             $rootScope.carregando = false;
             $rootScope.erro = false;
             $rootScope.dados = response.data;
