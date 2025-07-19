@@ -43,6 +43,13 @@ app.run(function ($rootScope, $location, $http) {
         $rootScope.filtro = '';
     };
 
+    $rootScope.exibirTelefone = function(telefone) {
+        if(telefone.length >= 11){
+            telefone = telefone.substring(0,2) + ' ' + telefone.substring(2,telefone.length);
+        }
+        return telefone;
+    }
+
     $rootScope.copiarTelefone = function (telefone) {
         navigator.clipboard.writeText(telefone);
     };
