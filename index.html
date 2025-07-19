@@ -107,7 +107,7 @@
                             <td>{{x.NOME}}</td>
                             <td>{{x.INGRESSO}}</td>
                             <td>
-                                {{x.CONTATO}}
+                                {{exibirTelefone(x.CONTATO)}}
                                 <i class="fa fa-clone" ng-click="copiarTelefone(x.CONTATO)" ng-show="x.CONTATO"
                                     title-custom="Copiar para área de transferência"></i>
                                 <i class="fa fa-whatsapp" title-custom="Enviar mensagem por WhatsApp"
@@ -141,7 +141,7 @@
                                         <p><strong>Ingresso:</strong> {{x.INGRESSO}}</p>
                                     </div>
                                     <div class="">
-                                        <p><strong>Telefone:</strong> {{x.CONTATO}} <i class="fa fa-clone"
+                                        <p><strong>Telefone:</strong> {{exibirTelefone(x.CONTATO)}} <i class="fa fa-clone"
                                                 ng-click="copiarTelefone(x.CONTATO)" ng-show="x.CONTATO"
                                                 title-custom="Copiar para área de transferência"></i>
                                             <i class="fa fa-whatsapp" title-custom="Enviar mensagem por WhatsApp"
@@ -184,7 +184,7 @@
                             <td>{{x.NOME}}</td>
                             <td>{{x.INGRESSO}}</td>
                             <td>
-                                {{x.CONTATO}}
+                                {{exibirTelefone(x.CONTATO)}}
                                 <i class="fa fa-clone" ng-click="copiarTelefone(x.CONTATO)" ng-show="x.CONTATO"
                                     title-custom="Copiar para área de transferência"></i>
                                 <i class="fa fa-whatsapp" title-custom="Enviar mensagem por WhatsApp"
@@ -217,7 +217,7 @@
                                         <p><strong>Ingresso:</strong> {{x.INGRESSO}}</p>
                                     </div>
                                     <div class="">
-                                        <p><strong>Telefone:</strong> {{x.CONTATO}} <i class="fa fa-clone"
+                                        <p><strong>Telefone:</strong> {{exibirTelefone(x.CONTATO)}} <i class="fa fa-clone"
                                                 ng-click="copiarTelefone(x.CONTATO)" ng-show="x.CONTATO"
                                                 title-custom="Copiar para área de transferência"></i>
                                             <i class="fa fa-whatsapp" title-custom="Enviar mensagem por WhatsApp"
